@@ -6,11 +6,11 @@
 <title></title> 
 <link rel="canonical" href="https://yggdrasil.co"> <!-- 1. 표준 도메인지정 -->
 <script type="text/javascript">
-var oldUrl = 'yggdrasil.co'; // 기본 URL
-var changeUrl = 'www.yggdrasil.co'; // 기본 URL로 사이트 접속 시 변경하고 싶은 URL
+var Url = 'yggdrasil.co'; // 기본 URL
+var RedirectUrl = 'www.yggdrasil.co'; // 기본 URL로 사이트 접속 시 변경하고 싶은 URL
 var urlString = location.href;
-if (urlString.match(oldUrl)){
-    window.location.replace(urlString.replace(oldUrl, changeUrl));
+if (urlString.match(Url)){
+    window.location.replace(urlString.replace(Url, RedirectUrl));
 } else {
     // 주소창에 입력한 주소가 oldURL과 다를 경우 아무런 행위도 하지않는다.
 }
